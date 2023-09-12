@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+}
+
+/*Header*/
+
+header {
+    background-color: black;
+    height: 150px;
+}
+
+/*Header Div Classes*/
+
+.logo1 {
+    height: 130px;
+    width: 150px;
+}
+
+
+.r-1 {
+    width: 100%;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-a:hover {
+    text-decoration: underline;
+    color: gold
+}
+
+.nav-icon {
+    color: white;
+}
+
+.nav-icon:hover {
+    text-decoration: underline;
+    color: gold
+}
