@@ -39,3 +39,9 @@ header {
     text-decoration: underline;
     color: gold
 }
+
+/*Article*/
+
+article {
+    width: 100%;
+}
