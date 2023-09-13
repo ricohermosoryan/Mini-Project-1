@@ -1,24 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
+
 * {
     margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Header*/
 
 header {
-    background-color: black;
+    background-image: linear-gradient(to right, #000000 0%, #000000 40%, #ffdc73 100%);
     height: 150px;
 }
 
 /*Header Div Classes*/
 
-.logo1 {
-    height: 130px;
-    width: 150px;
-}
-
-
-.r-1 {
-    width: 100%;
+.cont-logo {
+    width: 100px;
 }
 
 .nav-a {
@@ -28,7 +26,7 @@ header {
 
 .nav-a:hover {
     text-decoration: underline;
-    color: gold
+    color: rgb(255,220,115)
 }
 
 .nav-icon {
@@ -37,11 +35,54 @@ header {
 
 .nav-icon:hover {
     text-decoration: underline;
-    color: gold
+    color: rgb(255,220,115)
+}
+
+.hide:hover {
+    text-decoration: underline;
+    color: black
+}
+
+.vis:hover {
+    text-decoration: underline;
+    color: black
 }
 
 /*Article*/
 
 article {
     width: 100%;
+}
+
+/*Article Div Classes*/
+
+.car {
+    background-image: linear-gradient(to right, #000000 0%, #000000 70%, #ffdc73 100%);
+    height: 490px;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 295px){
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 236px){
+    .vis {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 237px){
+    .vis-can {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 296px){
+    .hide-can {
+        display: none;
+    }
 }
