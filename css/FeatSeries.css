@@ -1,0 +1,22 @@
+.img-tsuna {
+    height: 500;
+    width: 500px;
+}
+
+.t-row {
+    width: 100%;
+}
+
+.c-row {
+    width: 100%;
+}
+
+.fil-by {
+    text-decoration: none;
+    color: black;
+}
+
+.fil-by:hover {
+    text-decoration: underline;
+    color: #e76e76;
+}

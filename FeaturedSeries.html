@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroHaven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/herohaven.css">
+    <link rel="stylesheet" href="css/FeatSeries.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="shadow-lg sticky-top border-bottom border-secondary border-3">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" >
+            <div class="container mt-2">
+                
+                <div class="cont-logo">    
+                <a href="#"><img src="images/Herohaven.png" alt="logo" class="img-fluid">   
+                </a>
+                </div>
+                    
+                    <!--offcanvas div-->
+                <div class="offcanvas offcanvas-start" tabindex="1" id="nav" aria-labelledby="offcanvasNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNav"><span class="fw-semibold">HeroHaven</span></h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!--Content of the offcanvas-->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav gap-3">
+                            <li class="nav-item">
+                                <a class="nav-a active" href="HeroHaven.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-a" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-a" href="#">Customize</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-a" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-a" href="#">Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-a" href="AboutUs.html">About Us</a>
+                            </li>
+                        </ul> 
+                    </div> 
+                </div> 
+                <div class="d-flex gap-2">
+                    <!--Search-->
+                    <div class="pt-2 dropdown">
+                        <a href="#" class="nav-icon vis text-decoration-none pt-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="ri-search-eye-line ri-lg"></i></a>
+                        <!--Search Dropdown Menu-->
+                        <form class="dr-form-search dropdown-menu dropdown-menu-end p-4 bg-transparent border-0">
+
+                            <div class="mb-3 d-flex border rounded-pill bg-dark">
+                              <input type="Search" class="search w-100 border-0 rounded-start-5 ps-3" id="Search">
+                              <button type="submit" class="btn btn-outline-secondary rounded-end-5 border-0">Search</button>
+                            </div>
+                            
+                          </form>
+                    </div>
+                    
+                    <!--Login-->
+                    <div class="pt-2 dropdown">
+                        <a href="#" class="nav-icon hide text-decoration-none pt-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="ri-login-box-line ri-lg"></i></a>
+                        <!--Login Dropdown Menu-->
+                        <form class="dr-form dropdown-menu dropdown-menu-end p-4">
+                            <Label class="ps-5 ms-5 mb-4 fs-4 fw-semibold">Log In</Label>
+                            <div class="mb-3">
+                              <label for="EmailAddress" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="EmailAddress" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                  Remember me
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary">Sign in</button>
+                          </form>
+                    </div>
+                    <!--Sign Up-->
+                    <div class="pt-2 dropdown">
+                        <a href="#" class="nav-icon hide text-decoration-none pt-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="ri-user-add-line ri-lg"></i></a>
+                        <!--Sign Up dropdown Menu-->
+                        <form class="dr-form dropdown-menu dropdown-menu-end p-4">
+                            <Label class="ps-5 ms-5 mb-4 fs-4 fw-semibold">Sign Up</Label>
+                            <div class="mb-3">
+                              <label for="EmailAddress" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="EmailAddress" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary">Sign Up</button>
+                          </form>
+                    </div>
+                    
+                    <!--Cart Offcanvas-->
+                    
+                        <a href="#ShopCart" class="nav-icon vis text-decoration-none pt-2" data-bs-toggle="offcanvas" role="button" aria-controls="ShopCart"><i class="ri-shopping-cart-2-line ri-lg"></i></a>
+                    
+                    <!--navbar toggler button-->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span></button>
+                </div> 
+            </div> 
+        </nav>
+    </header>
+    <!--Cart Offcanvas Body-->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="1" id="ShopCart" aria-labelledby="ShopCart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fs-3 fw-semibold" id="CartTitle">Cart</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <span>Your Cart is Empty</span><br><br>
+                <button class="btn btn-info btn-lg rounded-pill">Continue Shopping</button>
+            </div>
+            
+        </div>
+    </div>
+    <!--Series Collection-->
+
+    <Section>
+        <h1 class="pt-5 ps-5 pb-3 fw-medium display-4">Series Collection</h1>
+        <div class="container border-top border-2 pt-4">
+            <!--First row-->
+            <div class="row mt-3 mb-3">
+                    <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/aot.webp" class="img-fluid slime" alt="images">
+                        <div class="card-body">
+                          <p class="text-center pt-2">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                      <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/aniplex.png" class="image-fluid mt-4 pt-3 slime" alt="images">
+                        <div class="card-body">
+                          <p class="text-center mt-3 pt-3">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                      <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/Azur_Lane.avif" class="img-fluid mt-5 pt-1 slime" alt="images">
+                        <div class="card-body">
+                            <p class="text-center mt-4 pt-3">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                      <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/BANDAI.avif" class="img-fluid slime" alt="image">
+                        <div class="card-body">
+                            <p class="text-center pb-4">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                      <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/bluelock.webp" class="image-fluid slime" alt="image">
+                        <div class="card-body">
+                            <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                      <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                        <img src="images/chainsaw.webp" class="image-fluid slime" alt="image">
+                        <div class="card-body">
+                            <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                        </div>
+                      </div>
+                
+            </div>
+            <!--Second Row-->
+            <div class="row mt-3 mb-3">
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/code_geass.avif" class="img-fluid mt-5 pt-3 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-5 pt-1">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/DARLING_in_the_FRANXX.webp" class="image-fluid mt-4 pt-3 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-4">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/datealive.avif" class="image-fluid mt-5 pt-4 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-5 pt-2">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/DC_Comics.webp" class="img-fluid slime" alt="img">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/DemonSlayer.webp" class="image-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>
+                  <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/dragonball.webp" class="image-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                  </div>    
+            </div>
+        <!--Third Row-->
+        <div class="row mt-3 mb-3">
+            <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                <img src="images/fairytale.avif" class="img-fluid mt-5 pt-5 slime" alt="image">
+                <div class="card-body">
+                    <p class="text-center mt-4 pt-3">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div>
+              <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                <img src="images/Fate-Grand_Order.webp" class="image-fluid mt-5 pt-4 slime" alt="image">
+                <div class="card-body">
+                    <p class="text-center mt-4">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div>
+              <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                <img src="images/genshin.webp" class="image-fluid mt-5 slime" alt="image">
+                <div class="card-body">
+                    <p class="text-center pt-2">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div>
+              <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont ">
+                <img src="images/gundam.webp" class="img-fluid slime" alt="img">
+                <div class="card-body">
+                    <p class="text-center mt-4 pt-1">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div>
+              <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                <img src="images/haikyu.webp" class="image-fluid slime" alt="image">
+                <div class="card-body">
+                    <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div>
+              <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                <img src="images/hunterxhunter.webp" class="image-fluid mt-5 slime" alt="image">
+                <div class="card-body">
+                    <p class="text-center mt-4 pt-2">Details<i class="ri-arrow-right-line"></i></p>
+                </div>
+              </div> 
+              </div>
+            <!--Fourth Row-->
+                <div class="row mt-3 mb-3">
+                    <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/jujutsu.webp" class="img-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/marvel.webp" class="image-fluid mt-5 pt-4 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-5">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/myhero.webp" class="image-fluid mt-4 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-4">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/naruto.webp" class="img-fluid slime" alt="img">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/onepiece.webp" class="image-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/One_Punchman.webp" class="image-fluid mt-5 pt-4 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-5 pt-2">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+              </div> 
+             </div>
+             <!--Fifth Row-->
+                <div class="row mt-3 mb-3">
+                    <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/re-zero.webp" class="img-fluid mt-5 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-3">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/anya.webp" class="image-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/star_wars.webp" class="image-fluid mt-4 pt-3 slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-4 pt-4">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/sao.webp" class="img-fluid mt-4 slime" alt="img">
+                    <div class="card-body">
+                        <p class="text-center mt-4">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/slime.webp" class="image-fluid slime" alt="image">
+                    <div class="card-body">
+                        <p class="text-center">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-2 border-0 slime-cont">
+                    <img src="images/The_Quintessential_Quintuplets.webp" class="slime image-fluid mt-5" alt="image">
+                    <div class="card-body">
+                        <p class="text-center mt-4">Details<i class="ri-arrow-right-line"></i></p>
+                    </div>
+              </div> 
+             </div>
+        </div>
+    </Section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="border-bottom border-secondary">
+            <div class="ms-4 pt-2">
+                <button class="btn btn-outline-secondary border-0 text-white"><i class="ri-mail-unread-line ri-2x"></i></button>
+           <p class="fs-5 fw-semibold">News and promotion straight to your Mailbox</p>
+            </div>   
+        </div>
+        <div class=" container foot d-flex justify-content-between pt-5">
+            <div class="q-row row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <p class="fs-3 fw-semibold">Quick Links</p>
+                    <ul class="list-unstyled">
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Search</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">About Us</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Order Guideline</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Shipping Policy</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Refund Policy</a></li>
+                        <li class="p-1"><a href="#" class="text-decoration-none text-white">Term of Service</a></li>
+                    </ul>
+                </div>
+                <div  class="col-12 col-md-4 col-lg-4">
+                    <p class="fs-3 fw-semibold">Contact us</p>
+                    <p>Email Address: contact@herohaven.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <p class="fs-3 fw-semibold">Follow us on social media</p> 
+                    <div class="d-flex gpa-4">
+                        <div class="f-icn">
+                            <a href="#" class="text-decoration-none text-white"><i class="f-icn ri-facebook-fill ri-2x"></i></a> 
+                        </div>
+                         <div class="t-icn">
+                            <a href="#" class="text-decoration-none text-white"><i class="t-icn ri-twitter-fill ri-2x"></i></a> 
+                         </div>
+                        <div class="i-icn">
+                            <a href="#" class="text-decoration-none text-white"><i class="i-icn ri-instagram-fill ri-2x"></i></a>
+                        </div>
+                        <div class="y-icn">
+                            <a href="#" class="text-decoration-none text-white"><i class="y-icn ri-youtube-fill ri-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="border-top border-secondary text-center pt-3">&copy; 2023 HeroHaven Collectibles</p>
+    </footer>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
