@@ -9,7 +9,7 @@
 /*Header*/
 
 header {
-    background-image: linear-gradient(to right, #000000 0%, #000000 55%, #dc1724 100%);
+    background-image: linear-gradient(to right, #000000 0%, #000000 55%, #a5a5a5 100%);
     height: 150px;
 }
 
@@ -72,7 +72,7 @@ article {
 /*Article Div Classes*/
 
 .car {
-    background-image: linear-gradient(to right, #000000 0%, #000000 70%, #dc1724 100%);
+    background-image: linear-gradient(to right, #000000 0%, #000000 70%, #b8b8b8 100%);
     height: 648px;
 }
 
@@ -121,7 +121,7 @@ article {
 }
 
 .feat-cont {
-    background-image: linear-gradient(to right, #000000 0%, #000000 70%, #dc1724 100%);
+    background-image: linear-gradient(to right, #000000 0%, #000000 70%, #b8b8b8 100%);
     border-radius: 10px;
 }
 
