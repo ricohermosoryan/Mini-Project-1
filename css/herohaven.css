@@ -126,8 +126,13 @@ article {
 }
 
 .btn-car {
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.span-btn {
+    width: 20px;
+    height: 20px;
 }
 
 .img-pg-1 {
@@ -159,13 +164,9 @@ article {
 
 /*Join Community*/
 
-.comm-row {
-    width: 100%;
-}
 
 .community {
     background-color: #f8f9fa;
-    height: 600px;
 }
 
 .int {
@@ -173,15 +174,10 @@ article {
     border: none;
 }
 
-.j-c {
-    width: 730px;
-    height: 120px;
-}
 
 /*Footer*/
 
 footer {
-    height: 740px;
     background-color: black;
     color: white;
 }
