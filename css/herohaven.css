@@ -62,6 +62,10 @@ header {
     background-color: transparent;
 }
 
+.shop-drop {
+    width: 500px;
+}
+
 /*Article*/
 
 article {
@@ -182,9 +186,6 @@ footer {
     color: white;
 }
 
-.foot {
-    height: 570px;
-}
 
 .q-row {
     width: 100%;
@@ -255,17 +256,4 @@ footer {
     color: #ff0808;
 }
 
-/*Media Query*/
-
-@media screen and (max-width: 295px){
-    .hide {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 236px){
-    .vis {
-        display: none;
-    }
-}
 
